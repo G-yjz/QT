@@ -1,0 +1,20 @@
+pip config set global.index-url https://mirrors.aliyun.com/pypi/simple/         换成阿里源
+
+jupyter notebook 打开默认路径修改
+cmd 打开命令行窗口- 输入 jupyter notebook --generate-config 敲回车
+生成一个文件jupyter_notebook_config.py
+打开找到 #c.NotebookApp.notebook_dir = ‘’
+记得去#号，把\改为/
+
+
+pip list
+pip install 
+
+
+问题：ModuleNotFoundError: No module named ‘pip’
+解决：
+python -m ensurepip
+python -m pip install --upgrade pip
+
+pip升级包命令：pip install --upgrade packagename
+pip卸载包命令：pip uninstall packagename
